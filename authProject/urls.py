@@ -18,11 +18,14 @@ from django.urls import path
 from authApp.login import login
 from authApp.views.users.create import create_user
 from authApp.views.customers.create import create_customers
+from authApp.views.trip.create import create_trip
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login),
     path('users/create', create_user),
     path('customers/create', create_customers),
+    path('trip/create', create_trip),
+    
 
 ]
