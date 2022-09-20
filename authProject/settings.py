@@ -93,12 +93,29 @@ WSGI_APPLICATION = 'authProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+#configuracion de sqlite
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+#configuracion de postgres
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE':'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'db2cf2bf52boqu',
+#         'USER': 'zkfjbtnvmeirtp',
+#         'PASSWORD': '730b8e8a094494f317c01089ad7837e8decaa2b9d09e3dcea3677d54ab50e91b',
+#         'HOST': 'ec2-34-200-205-45.compute-1.amazonaws.com',
+#         'PORT': '5432',
+        
+#     }
+# }
+
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
